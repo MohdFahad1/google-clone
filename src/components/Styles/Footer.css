@@ -1,0 +1,38 @@
+footer{
+    background-color: #f2f2f2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-links{
+    border-top: 2px solid #DADCE0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.country-name {
+    background-color: #f2f2f2;
+    color: #707595;
+    /* padding: 1.3rem; */
+    margin: .5rem 0 .5rem 3rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.footer-links {
+    padding: 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #70757A;
+    margin: 1.5rem;
+}
+
+@media screen and(max-width:576px) {
+    .footer-links a{
+        font-size: 1rem;
+    }
+} 
