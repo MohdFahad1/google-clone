@@ -31,10 +31,15 @@ form:hover{
     box-shadow: 0px 2px 10px -5px #888888;
 }
 
+form:active{
+    box-shadow: 0px 2px 10px -5px #888888;
+}
+
 .input-icon{
     color: #C6C9CD;
     cursor: pointer;
 }
+
 
 .homescreen-btn{
     border: none;
@@ -45,6 +50,10 @@ form:hover{
     padding: 1rem;
     margin: 0 1rem 0 1rem;
     cursor: pointer;
+}
+
+.homescreen-btn:hover{
+    border: 1px solid #8e8e8e;
 }
 
 @media screen and (max-width:576px) {
