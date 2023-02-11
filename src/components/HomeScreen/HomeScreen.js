@@ -1,21 +1,18 @@
 import React from 'react'
-import { FaMicrophone } from "react-icons/fa";
-import { FaCamera } from "react-icons/fa";
-import { FaSearch } from "react-icons/fa";
+import { FaMicrophone, FaSearch } from "react-icons/fa";
 import '../Styles/HomeScreen.css';
 const HomeScreen = () => {
   return (
     <div className='home_screen-container'>
       <img src='https://www.google.com.hk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png' alt="google" />
       <form>
-        <FaSearch />
+        <FaSearch className='input-icon'/>
         <input type="" />
-        <FaMicrophone />
-        <FaCamera />
+        <FaMicrophone className='input-icon'/>
       </form>
       <div>
-        <button>Google Search</button>
-        <button>I'm Feeling Lucky</button>
+        <button className='homescreen-btn'>Google Search</button>
+        <button className='homescreen-btn'>I'm Feeling Lucky</button>
       </div>
     </div>
   )
