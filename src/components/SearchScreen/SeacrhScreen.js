@@ -1,12 +1,16 @@
-import React, { useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
+import React from 'react';
+import Header from './Header';
 
-const SeacrhScreen = ({ searchTerm }) => {
 
+
+const SeacrhScreen = ({ searchTerm, googleData }) => {
   return (
+    <>
+    <Header searchTerm={searchTerm}/>
     <div className='search-screen'>
       <h1>Welcome to SeacrhScreen : { searchTerm }</h1>
     </div>
+    </>
   )
 }
 
