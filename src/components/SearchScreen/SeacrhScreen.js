@@ -5,7 +5,7 @@ const SeacrhScreen = ({ searchTerm }) => {
 
   return (
     <div className='search-screen'>
-      <h1>Welcome to SeacrhScreen</h1>
+      <h1>Welcome to SeacrhScreen : { searchTerm }</h1>
     </div>
   )
 }
