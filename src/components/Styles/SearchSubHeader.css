@@ -1,0 +1,31 @@
+.search_Sub_header{
+    border-bottom: 1px ridge #8e8e8e;
+}
+
+ul{
+    display: flex;
+    margin-left: 13rem;
+}
+
+ul li{
+    list-style: none;
+    margin: 1rem;
+}
+
+ul li a{
+    text-decoration: none;
+}
+
+@media  screen and (max-width:576px) {
+    ul{
+        margin-left: 0;
+    }
+
+    ul li{
+        margin: .8rem;
+    }
+
+    .search_Sub_header-icon{
+        display: none;
+    }
+}
