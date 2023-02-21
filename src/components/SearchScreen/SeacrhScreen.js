@@ -1,14 +1,15 @@
 import React from 'react';
 import Header from './Header';
+import '../Styles/SearchScreen.css';
+import SearchOutput from './SearchOutput/SearchOutput';
 
 
-
-const SeacrhScreen = ({ searchTerm, googleData }) => {
+const SeacrhScreen = ({ searchTerm, googleData, setSearch}) => {
   return (
     <>
-    <Header searchTerm={searchTerm}/>
+    <Header searchTerm={searchTerm} setSearch={setSearch}/>
     <div className='search-screen'>
-      <h1>Welcome to SeacrhScreen : { searchTerm }</h1>
+      <SearchOutput googledata={googleData}/>
     </div>
     </>
   )

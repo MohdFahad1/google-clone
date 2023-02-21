@@ -18,8 +18,13 @@ const HomeScreen = ({ setSearch }) => {
       navigate('/search');
     } else {
       navigate('/error');
+    } 
+  }
+
+  const handleButton = () => {
+    if(/^[a-zA-Z0-9].*/.test(input) || /^[a-zA-Z0-9]+" ".*/.test(input)){
+      setSearch(input);
     }
-    
   }
 
 
@@ -27,7 +32,7 @@ const HomeScreen = ({ setSearch }) => {
     <div className='home_screen-container'>
       <img src='https://www.google.com.hk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png' alt="google" />
       <form onSubmit={handleSubmit}>
-        <FaSearch className='input-icon' />
+        <FaSearch className='input-icon' onClick={handleButton}/>
         <input type="text" value={input} onChange={(event) => setInput(event.target.value)} />
         <FaMicrophone className='input-icon' />
       </form>
